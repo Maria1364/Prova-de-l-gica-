@@ -1,0 +1,44 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello World");
+
+    return 0;
+}using System;
+
+class Program
+{
+    static void Main()
+    {
+        var ddds = new System.Collections.Generic.Dictionary<int, string>
+        {
+            { 61, "brasília" },
+            { 71, "salvador" },
+            { 21, "rio de janeiro" },
+            { 32, "juiz de fora" },
+            { 19, "campinas" },
+            { 27, "vitória" },
+            { 31, "Belo horizonte" }
+        };
+
+        Console.WriteLine("Digite o DDD:");
+        int ddd = int.Parse(Console.ReadLine());
+
+        if (ddds.ContainsKey(ddd))
+        {
+            Console.WriteLine($"O DDD {ddd} é  de: {ddds[ddd]}");
+        }
+        else
+        {
+            Console.WriteLine("DDD não encontrado.");
+        }
+    }
